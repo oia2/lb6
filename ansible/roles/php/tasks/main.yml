@@ -1,0 +1,5 @@
+---
+- name: name_php
+  apt:
+    name=php
+    state=latest

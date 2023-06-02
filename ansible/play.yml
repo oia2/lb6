@@ -1,0 +1,13 @@
+---
+- hosts: name_ip
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    oleg
+  remote_user:
+    oleg
+  roles:
+    - php
+    - nginx
